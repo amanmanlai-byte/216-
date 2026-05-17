@@ -216,3 +216,10 @@ hr {
 	visibility: hidden;
 	opacity: 1;
 }
+
+/* Hide MDUI drawer toggle FAB */
+.mdui-drawer-body-left .mdui-fab,
+.mdui-btn-drawer,
+.mdui-fab-drawer {
+	display: none !important;
+}

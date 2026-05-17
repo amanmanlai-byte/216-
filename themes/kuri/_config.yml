@@ -1,0 +1,56 @@
+# kuri Theme Config @ version 1.0.0
+# website: https://kuri.ink | cl@kuri.ink
+
+# Yourself / 个人信息
+nickname: 我的博客
+motto: 记录生活与学习
+logo: 
+github: https://github.com/amanmanlai-byte
+background:
+  - https://api.ee123.net/img/bingimg/dayimg.jpg
+iconfont: /css/iconfont.css
+
+# SEO / 搜索引擎优化
+fav: /images/fav.png
+
+# Sidebar / 侧边栏
+sidebar:
+  A1: # 类别名称
+    B1: # 项目名称
+      - https://example.com/ # 超链接
+      - example # MDUI 鼠标悬停工具提示
+
+sidebar_color: 
+  A1: # 类别名称
+    - near_me # 图标
+    - mdui-text-color-blue # 图标颜色
+
+# Header / 页眉信息
+chizaobook: true # true / false 在页眉显示摛藻好句功能
+
+# Social / 社交按钮
+social:
+  GitHub:
+    - https://github.com/amanmanlai-byte
+    - GitHub
+    - iconfont icongithub
+
+# Footer / 页脚信息
+## copyright / 版权
+author: Your Name
+## remark / 备注
+remark: ''
+## Regist / 备案
+regist: ''
+
+# tools / 工具
+analysis: 
+  platform: 51.la
+  id: 
+  cd: 
+aplayer: 
+  enable: false
+  platform: 
+  type: 
+  id: 
+  fixed: true

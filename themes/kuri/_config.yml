@@ -30,10 +30,10 @@ chizaobook: true # true / false 在页眉显示摛藻好句功能
 
 # Social / 社交按钮
 social:
-  GitHub:
-    - https://github.com/amanmanlai-byte
-    - GitHub
-    - iconfont icongithub
+  X:
+    - https://x.com/zengwanlin_
+    - X
+    - iconfont iconX
 
 # Footer / 页脚信息
 ## copyright / 版权

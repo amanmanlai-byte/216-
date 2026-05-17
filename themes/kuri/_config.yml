@@ -32,8 +32,12 @@ chizaobook: true # true / false 在页眉显示摛藻好句功能
 social:
   X:
     - https://x.com/zengwanlin_
-    - X
+    - '@zengwanlin_'
     - /images/x-logo.png
+  GitHub:
+    - https://github.com/amanmanlai-byte
+    - https://github.com/amanmanlai-byte
+    - icongithub
 
 # Footer / 页脚信息
 ## copyright / 版权

@@ -25,13 +25,16 @@
      <div id="card-content" class="card-content"> 
       <div class="social">
         <% for (a in theme.social) { %>
-        <a href="<%= theme.social[a][0] %>" target="_blank"><button class="mdui-btn mdui-btn-icon" mdui-tooltip="{content: '<%= theme.social[a][1] %>'}">
-          <% if (theme.social[a][2].indexOf('.png') !== -1) { %>
-          <img src="<%= theme.social[a][2] %>" style="width: 24px; height: 24px; border-radius: 4px;">
-          <% } else { %>
-          <span class="<%= theme.social[a][2] %>"></span>
-          <% } %>
-        </button></a>
+        <div style="display: flex; align-items: center; gap: 8px; margin: 6px 0;">
+          <a href="<%= theme.social[a][0] %>" target="_blank"><button class="mdui-btn mdui-btn-icon" mdui-tooltip="{content: '<%= theme.social[a][1] %>'}">
+            <% if (theme.social[a][2].indexOf('.png') !== -1) { %>
+            <img src="<%= theme.social[a][2] %>" style="width: 24px; height: 24px; border-radius: 4px;">
+            <% } else { %>
+            <span class="<%= theme.social[a][2] %>"></span>
+            <% } %>
+          </button></a>
+          <span style="font-size: 14px; color: #666;"><%= theme.social[a][1] %></span>
+        </div>
        <% } %>
       </div> 
      </div> 

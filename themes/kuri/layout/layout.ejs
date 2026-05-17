@@ -62,6 +62,34 @@
 
    <%- include("_partial/container.ejs") %> 
 
+   <% if (page.content) { %>
+   <div class="card" style="margin: 1% auto; max-width: 800px;"> 
+    <div id="card-content" class="card-content" style="padding: 20px;"> 
+     <h1 style="font-size: 22px; margin-bottom: 10px;"><%= page.title %></h1>
+     <div style="font-size: 13px; color: #999; margin-bottom: 20px;">
+       <%= page.date.format('YYYY-MM-DD') %>
+       <% if (page.tags && page.tags.length) { %>
+        &nbsp;|&nbsp; 标签: 
+        <% page.tags.each(function(tag){ %>
+         <a href="/tags/<%= tag.name %>/" style="color: #66CCFF;"><%= tag.name %></a>
+        <% }) %>
+       <% } %>
+     </div>
+     <div style="font-size: 16px; line-height: 1.8; color: #333;">
+      <%- page.content %>
+     </div>
+    </div> 
+   </div> 
+   <% if (page.prev || page.next) { %>
+   <div class="card" style="margin: 1% auto; max-width: 800px;">
+    <div id="card-content" style="padding: 15px 20px; display: flex; justify-content: space-between; font-size: 14px;">
+     <div><% if (page.prev) { %><a href="<%= config.root %><%= page.prev.path %>" style="color: #66CCFF;">← <%= page.prev.title %></a><% } %></div>
+     <div><% if (page.next) { %><a href="<%= config.root %><%= page.next.path %>" style="color: #66CCFF;"><%= page.next.title %> →</a><% } %></div>
+    </div>
+   </div>
+   <% } %>
+   <% } %>
+
    <!-- footer --> 
    <div id="footer" class="footer"> 
     <p class="remark">

@@ -24,8 +24,14 @@
     <div class="card" style="margin-top: 1%;"> 
      <div id="card-content" class="card-content"> 
       <div class="social">
-        <% for (a in theme.social) { %> 
-        <a href="<%= theme.social[a][0] %>" target="_blank"><button class="mdui-btn mdui-btn-icon" mdui-tooltip="{content: '<%= theme.social[a][1] %>'}"><span class="<%= theme.social[a][2] %>"></span></button></a> 
+        <% for (a in theme.social) { %>
+        <a href="<%= theme.social[a][0] %>" target="_blank"><button class="mdui-btn mdui-btn-icon" mdui-tooltip="{content: '<%= theme.social[a][1] %>'}">
+          <% if (theme.social[a][2].indexOf('.png') !== -1) { %>
+          <img src="<%= theme.social[a][2] %>" style="width: 24px; height: 24px; border-radius: 4px;">
+          <% } else { %>
+          <span class="<%= theme.social[a][2] %>"></span>
+          <% } %>
+        </button></a>
        <% } %>
       </div> 
      </div> 

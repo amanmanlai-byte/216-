@@ -7,7 +7,7 @@ motto: 记录20岁的以后
 logo: 
 github: https://github.com/amanmanlai-byte
 background:
-  - https://i.pinimg.com/1200x/af/91/1b/af911b8119ee0cc0d44c031be361a802.jpg
+  - /images/bg.jpg
 iconfont: /css/iconfont.css
 
 # SEO / 搜索引擎优化
